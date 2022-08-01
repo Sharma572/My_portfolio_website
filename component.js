@@ -9,7 +9,7 @@ class MyHeader extends HTMLElement{
         <div class="logo_container">
           <img
             src="images/logo.png"
-            alt="thapa technical logo"
+            alt="Raunak technical logo"
             class="logo"
           />
           <h2 class="logo_text">Raunak</h2>
@@ -17,13 +17,13 @@ class MyHeader extends HTMLElement{
         <nav class="navbar">
           <ul class="navbar-lists">
             <li><a class="navbar-link home-link" href="index.html" >Home</a></li>
-            <li><a class="navbar-link about-link" href="/about.html">About</a></li>
+            <li><a class="navbar-link about-link" href="#footer">About</a></li>
             <li><a class="navbar-link service-link" href="/service.html">Services</a></li>
             <li><a class="navbar-link portfolio-link" href="#portfolio-section">Portfolio</a></li>
             <li>
               <a
                 class="navbar-link"
-                href="/contact.html"
+                href="#contact"
                 target="_blank"
                 >Contact</a
               >
@@ -100,7 +100,7 @@ connectedCallback(){
             </div>
 
             <div>
-              <p>  <span><ion-icon name="mail-outline"></ion-icon></span> <a href="mailto:test@thapa.com"> info@thapatechnical.com </a> </p>
+              <p>  <span><ion-icon name="mail-outline"></ion-icon></span> <a href="mailto:test@Raunak.com"> info@Raunaktechnical.com </a> </p>
             </div>
           </address>
         </div>
@@ -108,7 +108,7 @@ connectedCallback(){
 
       <div class="container">
         <div class="f-social-icons">
-          <a href="https://www.instagram.com/thapatechnical/" target="_blank">
+          <a href="https://www.instagram.com/Raunaktechnical/" target="_blank">
             <ion-icon class="icons" name="logo-instagram"></ion-icon>
           </a>
 
@@ -116,13 +116,13 @@ connectedCallback(){
            <ion-icon class="icons" name="logo-discord"></ion-icon>
           </a>
 
-            <a href="https://www.youtube.com/thapatechnical" target="_blank">
+            <a href="https://www.youtube.com/Raunaktechnical" target="_blank">
            <ion-icon class="icons" name="logo-youtube"></ion-icon>
           </a>
         </div>
 
         <div class="f-credits">
-          <p>Copyright ©2022 All rights reserved | This template is made with ❤ by Thapa Technical</p>
+          <p>Copyright ©2022 All rights reserved | This template is made with ❤ by Raunak.</p>
         </div>
       </div>
 
