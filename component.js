@@ -16,15 +16,13 @@ class MyHeader extends HTMLElement{
         </div>
         <nav class="navbar">
           <ul class="navbar-lists">
-            <li><a class="navbar-link home-link" href="index.html" >Home</a></li>
+            <li><a class="navbar-link home-link" href="#main" >Home</a></li>
             <li><a class="navbar-link about-link" href="#footer">About</a></li>
-            <li><a class="navbar-link service-link" href="/service.html">Services</a></li>
             <li><a class="navbar-link portfolio-link" href="#portfolio-section">Portfolio</a></li>
             <li>
               <a
-                class="navbar-link"
-                href="#contact"
-                target="_blank"
+                class="navbar-link contact-link"
+                href="#contact-section"
                 >Contact</a
               >
             </li>
@@ -141,7 +139,7 @@ const mobile_nav = document.querySelector(".mobile-navbar-btn");
 const nav_header = document.querySelector(".header");
 
 const toggleNavbar = () => {
-    alert("hi");
+    // alert("hi");
     nav_header.classList.toggle("active");
 };
 
@@ -239,6 +237,15 @@ document.querySelector(".scroll-top").addEventListener("click", scrollTop);
 //  smooth scrolling
 // ========================================
 
+// Home
+const main_Section = document.querySelector(".section-hero");
+
+document.querySelector(".home-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    main_Section.scrollIntoView({ behavior: "smooth" });
+});
+
+
 const portfolioSection = document.querySelector(".section-portfolio");
 const contactSection = document.querySelector(".section-contact");
 
@@ -251,6 +258,25 @@ document.querySelector(".hireme-btn").addEventListener("click", (e) => {
     e.preventDefault();
     contactSection.scrollIntoView({ behavior: "smooth" });
 });
+
+// Contact us 
+const contact_Section = document.querySelector(".section-contact");
+
+document.querySelector(".contact-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    contact_Section.scrollIntoView({ behavior: "smooth" });
+});
+
+// About us
+const bio_data_Section = document.querySelector(".section-biodata");
+
+document.querySelector(".about-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    bio_data_Section.scrollIntoView({ behavior: "smooth" });
+});
+
+
+
 
 // ========================================
 // creating a portfolio tabbed component
@@ -357,3 +383,5 @@ const workSecObserver = new IntersectionObserver(workSectionObserve, {
 });
 
 workSecObserver.observe(workSection);
+
+
