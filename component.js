@@ -1,8 +1,14 @@
 
+
 // ========================================
 //  Coustum Header Element
 // ========================================
 class MyHeader extends HTMLElement{
+    
+    //  hideNav(){
+    //     console.log("hide Navb");
+    //     // nav_header.classList.toggle("active");
+    // }
     connectedCallback(){
         this.innerHTML =`
         <header class="header">
@@ -16,11 +22,11 @@ class MyHeader extends HTMLElement{
         </div>
         <nav class="navbar">
           <ul class="navbar-lists">
-            <li><a class="navbar-link home-link" href="#main" >Home</a></li>
-            <li><a class="navbar-link about-link" href="#footer">About</a></li>
-            <li><a class="navbar-link portfolio-link" href="#portfolio-section">Portfolio</a></li>
+            <li><a  id="home"  class="navbar-link home-link" href="#main" >Home</a></li>
+            <li><a  id="about"  class="navbar-link about-link" href="#footer">About</a></li>
+            <li><a id="porfolio"  class="navbar-link portfolio-link" href="#portfolio-section">Portfolio</a></li>
             <li>
-              <a
+              <a id="contact" 
                 class="navbar-link contact-link"
                 href="#contact-section"
                 >Contact</a
@@ -121,7 +127,7 @@ connectedCallback(){
             <ion-icon class="icons" name="logo-instagram"></ion-icon>
           </a>
 
-            <a href="https://discord.gg/MdScmCsua6" target="_blank">
+            <a href="#" target="_blank">
            <ion-icon class="icons" name="logo-discord"></ion-icon>
           </a>
 
@@ -143,160 +149,6 @@ connectedCallback(){
 customElements.define('my-footer',myFooter);
 
 
-// ========================================
-// Responsive navigation
-// ========================================
-
-class mytestimonial extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML =`
-        <section class="section section-testimonial ">
-        <div class="container">
-          <h2 class="common-heading">Happy Client works</h2>
-        </div>
-          <!-- Slider main container -->
-          <!-- Swiper -->
-    <div class="swiper mySwiper container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-        
-          <div class="swiper-client-msg">
-            <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-            <img loading="lazy" src="images/clients/a.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p> Raunak Sharma</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div>
-        <!-- slide end  -->
-         <div class="swiper-slide">
-        
-          <div class="swiper-client-msg">
-            <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-            <img loading="lazy" src="images/clients/b.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p> Raunak Sharma</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div>
-        <!-- slide end  -->
-         <div class="swiper-slide">
-        
-          <div class="swiper-client-msg">
-            <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-            <img loading="lazy" src="images/clients/c.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p> Raunak Sharma</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div>
-        <!-- slide end  -->
-         <div class="swiper-slide">
-        
-          <div class="swiper-client-msg">
-            <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-            <img loading="lazy" src="images/clients/d.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p> Raunak Sharma</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div>
-        <!-- slide end  -->
-         <div class="swiper-slide">
-        
-          <div class="swiper-client-msg">
-            <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-            <img src="images/clients/e.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p> Raunak Sharma</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div>
-        <!-- slide end  -->
-         <div class="swiper-slide">
-        
-          <div class="swiper-client-msg">
-            <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-            <img src="images/clients/f.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p> Raunak Sharma</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div>
-        <!-- slide end  -->
-         <div class="swiper-slide">
-        
-          <div class="swiper-client-msg">
-            <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-            <img src="images/clients/g.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p> Raunak Sharma</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div>
-        <!-- slide end  -->
-         <div class="swiper-slide">
-        
-          <div class="swiper-client-msg">
-            <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-            <img src="images/clients/h.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p> Raunak Sharma</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div>
-        <!-- slide end  -->
-       
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-        </div>
-    </section>
-        `
-    }
-}
-
-customElements.define('my-testimonial',mytestimonial);
 
 
 // ========================================
@@ -304,12 +156,22 @@ customElements.define('my-testimonial',mytestimonial);
 // ========================================
 const mobile_nav = document.querySelector(".mobile-navbar-btn");
 const nav_header = document.querySelector(".header");
+const link = document.querySelector('.navbar-link');
 
+
+
+const closeNav = () => {
+    // alert("hi");
+    nav_header.classList.remove("active");
+    
+};
 const toggleNavbar = () => {
     // alert("hi");
     nav_header.classList.toggle("active");
+    
 };
 
+link.addEventListener("click", () => closeNav());
 mobile_nav.addEventListener("click", () => toggleNavbar());
 
 
@@ -336,69 +198,6 @@ const observer = new IntersectionObserver(
 // when the hero section end part reached then we need to show the sticky navigation
 observer.observe(sectionHero);
 
-// ========================================
-//  how to add media queries in JS
-// ========================================
-function myFunction(widthSize) {
-    if (widthSize.matches) {
-        // If media query matches
-        const swiper = new Swiper(".swiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    } else {
-        const swiper = new Swiper(".swiper", {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    }
-}
-
-const widthSize = window.matchMedia("(max-width: 780px)");
-// Call listener function at run time
-myFunction(widthSize);
-// Attach listener function on state changes
-widthSize.addListener(myFunction);
-
-// ========================================
-//  scroll to top
-// ========================================
-const footerElm = document.querySelector(".section-footer");
-
-const scrollElement = document.createElement("div");
-scrollElement.classList.add("scrollTop-style");
-
-// I am adding the button element inside the div element
-scrollElement.innerHTML = ` <ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>`;
-
-// add to the bottom of the page
-footerElm.after(scrollElement);
-
-// deleting the dom element
-const scrollTop = () => {
-    sectionHero.scrollIntoView({ behavior: "smooth" });
-};
-
-document.querySelector(".scroll-top").addEventListener("click", scrollTop);
-
-// get the data attributes
 
 // ========================================
 //  smooth scrolling
@@ -445,110 +244,6 @@ document.querySelector(".about-link").addEventListener("click", (e) => {
 
 
 
-// ========================================
-// creating a portfolio tabbed component
-// ========================================
 
-const port_btn = document.querySelector(".p-btns");
-const p_btn = document.querySelectorAll(".p-btn");
-const img_div = document.querySelectorAll(".img-ovelay");
-
-port_btn.addEventListener("click", (e) => {
-    // console.log(e.target);
-
-    // we will get which child element was clicked
-    const p_btn_clicked = e.target;
-    console.log(p_btn_clicked);
-
-    if (!p_btn_clicked.classList.contains("p-btn")) return;
-    // always remove the classList first then add the class
-    p_btn.forEach((curElem) => curElem.classList.remove("p-btn-active"));
-    // img_div.forEach((curElem) =>
-    //   curElem.classList.remove("portfolio-image-active")
-    // );
-
-    p_btn_clicked.classList.add("p-btn-active");
-
-    // to find the p-img class number of the images using the btn data attribute number
-
-    const btn_num = p_btn_clicked.dataset.btnNum;
-    // console.log(btn_num);
-
-    const img_active = document.querySelectorAll(`.p-btn--${btn_num}`);
-    // console.log(img_active);
-
-    img_div.forEach((curElem) =>
-        curElem.classList.add("portfolio-image-not-active")
-    );
-
-    img_active.forEach((curElem) =>
-        curElem.classList.remove(`portfolio-image-not-active`)
-    );
-});
-
-// ========================================
-//  lazy loading section
-// ========================================
-const imgRef = document.querySelector("img[data-src]");
-console.log(imgRef);
-
-const lazyImg = (entries) => {
-    const [entry] = entries;
-    if (!entry.isIntersecting) return;
-    entry.target.src = imgRef.dataset.src;
-};
-
-const imgObserver = new IntersectionObserver(lazyImg, {
-    root: null,
-    threshold: 0,
-    // rootMargin: "100px",
-});
-
-imgObserver.observe(imgRef);
-
-// ========================================
-//  animated counter number
-// ========================================
-
-const workSection = document.querySelector(".section-work-data");
-
-const workSectionObserve = (entries) => {
-    const [entry] = entries;
-    if (!entry.isIntersecting) return;
-    console.log(entries);
-
-
-    const counterNum = document.querySelectorAll(".counter-numbers");
-    // console.log(counterNum);
-    const speed = 200;
-
-    counterNum.forEach((curNumber) => {
-        const updateNumber = () => {
-            const targetNumber = parseInt(curNumber.dataset.number);
-            // console.log(targetNumber);
-            const initialNumber = parseInt(curNumber.innerText);
-            // console.log(initialNumber);
-            const incrementNumber = Math.trunc(targetNumber / speed);
-            // i am adding the value to the main number
-            // console.log(incrementNumber);
-
-            if (initialNumber < targetNumber) {
-                curNumber.innerText = `${initialNumber + incrementNumber}+`;
-                setTimeout(updateNumber, 10);
-            } else {
-                curNumber.innerText = `${targetNumber}+`;
-            }
-
-        };
-        updateNumber();
-    });
-};
-
-const workSecObserver = new IntersectionObserver(workSectionObserve, {
-    root: null,
-    threshold: 0,
-});
-
-workSecObserver.observe(workSection);
 
 
