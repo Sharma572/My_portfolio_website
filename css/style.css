@@ -209,7 +209,17 @@ Hero  Section Start
 .section-hero {
   background: var(--bg);
 }
-
+.my_name{
+  font-size: 3.5rem;
+}
+.my-info{
+  font-size: 2.4rem;
+  margin: 20px 0;
+}
+.input{
+  color: var(--favColor);
+  font-size: 2.4rem;
+}
 .section-hero-data {
   display: flex;
   flex-direction: column;
@@ -221,30 +231,8 @@ Hero  Section Start
   text-transform: uppercase;
   color: var(--heading);
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: var(--helper);
-}
-
-
-
-.hero-heading {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 6.4rem;
-}
-
-.iam{
-  color: white;
-    font-size: 55px;
-    padding: 15px;
-    font-family: sans-serif;
-}
-.my_info{
-  color: white;
-    border-right: 2px solid red;
-    font-size: 55px;
-    font-family: sans-serif;
-    color: rgb(255, 30, 0);
 }
 
 .section-hero-image {
@@ -311,6 +299,36 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
+  width: 70%;
+  height: inherit;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(132 144 255) 0%,
+    rgb(98 189 252) 100%
+  );
+  border-radius: 10rem;
+}
+
+.bio-progress-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: inherit;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(132 144 255) 0%,
+    rgb(98 189 252) 100%
+  );
+  border-radius: 10rem;
+}
+
+.bio-progress-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 80%;
   height: inherit;
   background: -webkit-linear-gradient(
@@ -321,34 +339,35 @@ h3 {
   border-radius: 10rem;
 }
 
-/* to create the rectangle box  */
-.bio-progress-bar span {
-  position: absolute;
-  top: 1.8rem;
-  left: 76%;
-  width: 4rem;
-  height: 2rem;
-  background: var(--helper);
-  color: var(--third);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  border: none;
-  outline: none;
-}
-
-/* to create the traingle or caret symbol  */
-.bio-progress-bar span::after {
+.bio-progress-4::before {
   content: "";
   position: absolute;
-  top: -1.6rem;
-  width: 0rem;
-  height: 0rem;
-  border: 0.8rem solid var(--helper);
-  border-color: transparent;
-  border-bottom-color: var(--helper);
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: inherit;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(132 144 255) 0%,
+    rgb(98 189 252) 100%
+  );
+  border-radius: 10rem;
 }
+.bio-progress-5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: inherit;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgb(132 144 255) 0%,
+    rgb(98 189 252) 100%
+  );
+  border-radius: 10rem;
+}
+
 
 /* ===========================================
  Section portfolio
@@ -360,7 +379,8 @@ h3 {
 
 .section-portfolio p,
 .section-services p {
-  max-width: 60rem;
+ 
+  text-align: center;
 }
 
 .portfolio-images {

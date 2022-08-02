@@ -48,6 +48,17 @@ class MyHeader extends HTMLElement{
 }
 customElements.define('my-header', MyHeader);
 
+
+
+var typed = new Typed('.input', {
+    strings: ["Front End Developer", "Programmer", "Web Developer", "A DIY enthusiastic"],
+    typeSpeed: 100,
+    backSpeed:100,
+    loop:true,
+});
+
+
+
 // ========================================
 //  Coustum Footer Element
 // ========================================
