@@ -16,7 +16,7 @@
   --helper-tint: #f3f4ff;
   --bg: rgb(249 249 255);
   --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
-  --shadpw: 0px 0px 20px 0px rgb(132 144 255 / 20%);
+  --shadow: 0px 0px 20px 0px rgb(132 144 255 / 70%);
 }
 
 html {
@@ -168,11 +168,7 @@ Header Section Start
   border: none;
 }
 
-.mobile-nav-icon {
-  width: 5rem;
-  height: 5rem;
-  color: #212529;
-}
+
 
 /* for desktop or mobile menu-outline one must be visible  
 and we need to hide the close menu icon
@@ -198,9 +194,12 @@ and we need to hide the close menu icon
 /* ===========================================
 Hero  Section Start
 ======================================= */
-
+#main{
+  background-color: var(--bg);
+}
 .section-hero {
   background: var(--bg);
+  margin: 0 7%;
 }
 .my_name {
   font-size: 3.5rem;
@@ -235,8 +234,27 @@ Hero  Section Start
 }
 
 .hero-img {
-  max-width: 80%;
+  max-width: 60%;
   z-index: 1;
+  -webkit-animation: float 3s linear infinite;
+	        animation: float 3s linear infinite;
+}
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 /* ===========================================
@@ -276,89 +294,26 @@ h3 {
   margin-bottom: 1rem;
 }
 
-.bio-progress-bar {
-  width: 90%;
-  height: 0.8rem;
-  /* background: var(--para); */
-  background-color: rgb(233 236 239);
-  border-radius: 10rem;
-  position: relative;
-  box-shadow: var(--shadpw);
-  /* overflow: hidden; */
+.skills-heading{
+  font-size: 25px;
+  margin-top: 25px;
+}
+.tools{
+  margin-left:15px;
 }
 
-.bio-progress-bar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
-  height: inherit;
-  background: -webkit-linear-gradient(
-    0deg,
-    rgb(132 144 255) 0%,
-    rgb(98 189 252) 100%
-  );
-  border-radius: 10rem;
+.my_skills{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin: 35px 0;
+  gap: 25px 0;
+  justify-items: center;
 }
-
-.bio-progress-2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height: inherit;
-  background: -webkit-linear-gradient(
-    0deg,
-    rgb(132 144 255) 0%,
-    rgb(98 189 252) 100%
-  );
-  border-radius: 10rem;
+.skils-logo{
+  height: 40px;
 }
-
-.bio-progress-3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: inherit;
-  background: -webkit-linear-gradient(
-    0deg,
-    rgb(132 144 255) 0%,
-    rgb(98 189 252) 100%
-  );
-  border-radius: 10rem;
-}
-
-.bio-progress-4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
-  height: inherit;
-  background: -webkit-linear-gradient(
-    0deg,
-    rgb(132 144 255) 0%,
-    rgb(98 189 252) 100%
-  );
-  border-radius: 10rem;
-}
-.bio-progress-5::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: inherit;
-  background: -webkit-linear-gradient(
-    0deg,
-    rgb(132 144 255) 0%,
-    rgb(98 189 252) 100%
-  );
-  border-radius: 10rem;
+.skils-logo:hover{
+box-shadow: var(--shadow);
 }
 
 /* ===========================================
@@ -477,7 +432,7 @@ contact Section
 ======================================= */
 
 .section-contact-main {
-  max-width: 70rem;
+  max-width: 90rem;
   margin: 0 auto;
   margin-top: 10rem;
 }
@@ -486,6 +441,8 @@ contact Section
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 80%;
+    margin: 0 auto;
 }
 .section-contact-main .grid {
   gap: 2.4rem;
@@ -500,13 +457,29 @@ textarea {
   font-size: 1.6rem;
   font-family: "work sans";
 }
+.container-contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-img-container{
+  width: 30%;
+
+}
+.contact-img{
+width: 100%;
+height: 100%;
+}
 
 .section-contact-main textarea {
   height: 15rem;
 }
 
 .section-contact-main input[type="submit"] {
-  max-width: 30%;
+  
+  padding: 15px 20px;
+  width: 40%;
+ 
   border: none;
 }
 
@@ -521,6 +494,20 @@ Footer Section
 .section-footer h3 {
   color: var(--third);
   margin-bottom: 4rem;
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0 ;
+}
+.util-logo{
+height: 6rem;
+}
+
+.social-logo{
+  height: 4rem;
+  margin: 15px ;
 }
 
 .f-about p {
@@ -555,24 +542,6 @@ Footer Section
 .f-address p {
   font-style: normal;
   color: #adadad;
-}
-
-.f-social-icons {
-  margin: 5rem 0;
-  text-align: center;
-  color: #adadad;
-}
-
-.f-social-icons .icons {
-  width: 4rem;
-  height: 4rem;
-  background-color: rgb(144 172 209 / 20%);
-  display: inline-block;
-  padding: 1.4rem 1.8rem;
-  position: relative;
-  color: var(--heading);
-  animation: water-wave 3s linear infinite;
-  color: var(--third);
 }
 
 .f-credits p {
@@ -621,7 +590,7 @@ Media Queries Section
   .mobile-navbar-btn {
     display: block;
     z-index: 99999;
-    border: 3px solid #212529;
+    /* border: 3px solid #212529; */
     color: #212529;
   }
 
@@ -759,10 +728,26 @@ Media Queries Section
 }
 
 @media (max-width: 350px){
+  .section-contact-main input[type="submit"] {
+    display: flex;
+    place-items: center;
+    width: 80%;
+    border: none;
+    text-align: center;
+}
   .section-portfolio .grid-three-col {
     grid-template-columns: repeat(1, 1fr);
 }
 .grid-two-col{
   grid-template-columns: repeat(1, 1fr)
+}
+.section-contact-main {
+  margin-top: 0;
+}
+.contact-img-container {
+  width: 100%;
+}
+.container-contact{
+  flex-direction: column;
 }
 }

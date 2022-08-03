@@ -7,6 +7,9 @@
     <meta name="description" content="my portfolio website to showcase the work I have done so far, the services I provide and all my professionals life.">
     <title>Raunak-Portfolio</title>
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -34,7 +37,7 @@
           </div>
 
           <div class="section-hero-image">
-            <img src="images/avatar.png" alt="hero image" class="hero-img" />
+            <img src="images/main_img.png" alt="hero image" class="hero-img" />
           </div>
         </div>
       </section>
@@ -54,38 +57,27 @@
             Hello i am Raunak Sharma,
             Computers have fascinated me since my childhood. When some of my IT friends built small projects on it then gradually my interest in it grew. Then i joined Newton School to learning Full-Stack Web Development for better and in-depth knowledge of the MERN stack. Having completed my Graduation in B.A. program, Initially, I was nervous to know about being a Full-Stack Web Developer but now i enjoyed while coding. 
           </p>
-          <div class="bio-data-stats">
-            <div class="bio-stats">
-              <h3>Design</h3>
-              <div class="bio-progress-bar">
-                
-              </div>
-            </div>
-            <div class="bio-stats">
-              <h3>HTML</h3>
-              <div class="bio-progress-bar bio-progress-2">
-               
-              </div>
-            </div>
-            <div class="bio-stats">
-              <h3>CSS</h3>
-              <div class="bio-progress-bar bio-progress-3">
-                
-              </div>
-            </div>
-            <div class="bio-stats">
-              <h3>JavaScript</h3>
-              <div class="bio-progress-bar bio-progress-4">
-                
-              </div>
-            </div>
-            <div class="bio-stats">
-              <h3>MERN</h3>
-              <div class="bio-progress-bar bio-progress-5">
-              
-              </div>
-            </div>
+          
+          <h2 class="skills-heading">My skills :</h2>
+          <div class="my_skills">
+            <img class="skils-logo" src="images/skillsIcon/html.png" alt="">
+            <img class="skils-logo" src="images/skillsIcon/css3.png" alt="">
+            <img class="skils-logo" src="images/skillsIcon/java-script.png" alt="">
+            <img class="skils-logo" src="images/skillsIcon/react.png" alt="">
+            <img class="skils-logo" src="images/skillsIcon/nodejs.png" alt="">
+            <img class="skils-logo" src="images/skillsIcon/bootstrap.png" alt="">
+            <img class="skils-logo" src="images/skillsIcon/java.png" alt="">
           </div>
+
+          <h2 class="skills-heading">Tools which i am using :</h2>
+          <div class="my_skills ">
+            <img class="skils-logo" src="images/skillsIcon/vscode.png" alt="">
+            <img class="skils-logo" src="images/skillsIcon/git.png" alt="">
+            <img class="skils-logo" src="images/skillsIcon/github.png" alt="">
+            <img class="skils-logo" src="images/skillsIcon/code-sandbox.png" alt="">
+            <img class="skils-logo" src="images/skillsIcon/sass.png" alt="">
+          </div>
+          
 
           <div class="bio-data-btn">
             <a href="https://drive.google.com/file/d/1vD_pIM24_j_fZXkYzEMShztar_EDWaSE/view?usp=sharing" class="btn" download> Downlaod CV </a>
@@ -166,25 +158,30 @@
         <div class="container">
           <h2 class="common-heading">contact us</h2>
         </div>
-
-        <div class="section-contact-main contact-container">
-          <form  action="https://formspree.io/f/xnqwzoro"
-  method="POST">
-            <div class=" grid grid-two-col">
-              <input type="text" name="username" id="" required placeholder="Name">
-              <input type="email" name="email" required placeholder="Email" autocomplete="false">
-            </div>
-            <div>
-              <input type="text" name="subject" placeholder="Subject">
-            </div>
-             <div>
-               <textarea name="message" id="" placeholder="Message"></textarea>
-             </div>
-
-             <div>
-               <input type="submit" value="send message" class="btn">
-             </div>
-          </form>
+       
+        <div class="container-contact">
+          <div class="contact-img-container">
+            <img class="contact-img" src="images/contact-us.png" alt="">
+          </div>
+          <div class="section-contact-main contact-container">
+            <form  action="https://formspree.io/f/xnqwzoro"
+    method="POST">
+              <div class=" grid grid-two-col">
+                <input type="text" name="username" id="" required placeholder="Name">
+                <input type="email" name="email" required placeholder="Email" autocomplete="false">
+              </div>
+              <div>
+                <input type="text" name="subject" placeholder="Subject">
+              </div>
+               <div>
+                 <textarea name="message" id="" placeholder="Message"></textarea>
+               </div>
+  
+               <div>
+                 <input type="submit" value="send message" class="btn">
+               </div>
+            </form>
+          </div>
         </div>
       </section>
 
@@ -222,18 +219,20 @@
         </div>
   
         <div class="container">
-          <div class="f-social-icons">
+          <div class="social-icons">
             <a href="https://www.instagram.com/Raunaktechnical/" target="_blank">
-              <ion-icon class="icons" name="logo-instagram"></ion-icon>
+              <img class="social-logo" src="images/insta-logo.gif" alt="github-logo">
             </a>
   
               <a href="https://github.com/Sharma572" target="_blank">
-             <ion-icon class="icons" name="logo-github"></ion-icon>
+                <img class="social-logo" src="images/icons8-github.gif" alt="github-logo">
             </a>
   
               <a href="https://www.linkedin.com/in/raunak-sharma-/" target="_blank">
-             <ion-icon class="icons" name=""></ion-icon>
+                <img class="social-logo" src="images/linkdin-logo.gif" alt="github-logo">
             </a>
+
+           
           </div>
   
           <div class="f-credits">
@@ -247,14 +246,11 @@
     <!-- ======================================== 
           Our JavaScript Section   
     ========================================  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
+   
+    <!-- <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    ></script> -->
     
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="module" src="component.js"></script>

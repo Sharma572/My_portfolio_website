@@ -33,17 +33,9 @@ class MyHeader extends HTMLElement{
         </nav>
   
         <div class="mobile-navbar-btn">
-          <ion-icon
-            class="mobile-nav-icon"
-            name="menu-outline"
-            class="mobile-nav-icon"
-          ></ion-icon>
-  
-          <ion-icon
-            class="mobile-nav-icon"
-            name="close-outline"
-            class="mobile-nav-icon"
-          ></ion-icon>
+          <span class="mobile-nav-icon"name="menu-outline"><img class="util-logo" src="images/skillsIcon/menu.png" alt="menu"></span>
+          <span class="mobile-nav-icon" name="close-outline"><img class="util-logo" src="images/skillsIcon/close.png" alt="close"></span>
+       
         </div>
       </header>
         `
@@ -125,7 +117,7 @@ connectedCallback(){
           </a>
 
             <a href="#" target="_blank">
-           <ion-icon class="icons" name="logo-discord"></ion-icon>
+            
           </a>
 
             <a href="https://www.youtube.com/Raunaktechnical" target="_blank">
