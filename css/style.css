@@ -783,6 +783,7 @@ Media Queries Section
 }
 .section-contact-main {
   margin-top: 0;
+  width: 90%;
 }
 .contact-img-container {
   width: 100%;
