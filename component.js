@@ -58,84 +58,84 @@ var typed = new Typed('.input', {
 //  Coustum Footer Element
 // ========================================
 
-class myFooter extends HTMLElement{
-connectedCallback(){
-    this.innerHTML=`
-    <footer class="section section-footer " >
-      <div class="container grid grid-four-col">
-        <div class="f-about">
-          <h3>About</h3>
-          <p>We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience. Hope you like it.</p>
-        </div>
+// class myFooter extends HTMLElement{
+// connectedCallback(){
+//     this.innerHTML=`
+//     <footer class="section section-footer " >
+//       <div class="container grid grid-four-col">
+//         <div class="f-about">
+//           <h3>About</h3>
+//           <p>We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience. Hope you like it.</p>
+//         </div>
 
-        <div class="f-links">
-           <h3>Links</h3>
-          <ul>
-            <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">home</a></li>
-             <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">about</a></li>
-              <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">services</a></li>
-               <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">portfolio</a></li>
+//         <div class="f-links">
+//            <h3>Links</h3>
+//           <ul>
+//             <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">home</a></li>
+//              <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">about</a></li>
+//               <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">services</a></li>
+//                <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">portfolio</a></li>
               
-                 <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">contact</a></li>
-          </ul>
-        </div>
+//                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">contact</a></li>
+//           </ul>
+//         </div>
 
-         <div class="f-services">
-            <h3>Services</h3>
-          <ul>
-            <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">web design</a></li>
-             <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">web development</a></li>
-              <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Mern Project</a></li>
+//          <div class="f-services">
+//             <h3>Services</h3>
+//           <ul>
+//             <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">web design</a></li>
+//              <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">web development</a></li>
+//               <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Mern Project</a></li>
            
-                <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Online Classes</a></li>
-                 <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Youtube Course</a></li>
-          </ul>
-        </div>
+//                 <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Online Classes</a></li>
+//                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Youtube Course</a></li>
+//           </ul>
+//         </div>
 
-        <div class="f-address"> 
-          <h3>Have a Questions?</h3>
-          <address>
-            <div>
-              <p>  <span><ion-icon name="location-outline"></ion-icon></span> Pune, India </p>
-            </div>
+//         <div class="f-address"> 
+//           <h3>Have a Questions?</h3>
+//           <address>
+//             <div>
+//               <p>  <span><ion-icon name="location-outline"></ion-icon></span> Pune, India </p>
+//             </div>
 
-            <div>
-              <p>  <span><ion-icon name="call-outline"></ion-icon></span> <a href="tel:+91123456789"> +91 9874563215 </a></p>
-            </div>
+//             <div>
+//               <p>  <span><ion-icon name="call-outline"></ion-icon></span> <a href="tel:+91123456789"> +91 9874563215 </a></p>
+//             </div>
 
-            <div>
-              <p>  <span><ion-icon name="mail-outline"></ion-icon></span> <a href="mailto:test@Raunak.com"> info@Raunaktechnical.com </a> </p>
-            </div>
-          </address>
-        </div>
-      </div>
+//             <div>
+//               <p>  <span><ion-icon name="mail-outline"></ion-icon></span> <a href="mailto:test@Raunak.com"> info@Raunaktechnical.com </a> </p>
+//             </div>
+//           </address>
+//         </div>
+//       </div>
 
-      <div class="container">
-        <div class="f-social-icons">
-          <a href="https://www.instagram.com/Raunaktechnical/" target="_blank">
-            <ion-icon class="icons" name="logo-instagram"></ion-icon>
-          </a>
+//       <div class="container">
+//         <div class="f-social-icons">
+//           <a href="https://www.instagram.com/Raunaktechnical/" target="_blank">
+//             <ion-icon class="icons" name="logo-instagram"></ion-icon>
+//           </a>
 
-            <a href="#" target="_blank">
+//             <a href="#" target="_blank">
             
-          </a>
+//           </a>
 
-            <a href="https://www.youtube.com/Raunaktechnical" target="_blank">
-           <ion-icon class="icons" name="logo-youtube"></ion-icon>
-          </a>
-        </div>
+//             <a href="https://www.youtube.com/Raunaktechnical" target="_blank">
+//            <ion-icon class="icons" name="logo-youtube"></ion-icon>
+//           </a>
+//         </div>
 
-        <div class="f-credits">
-          <p>Copyright ©2022 All rights reserved | This template is made with ❤ by Raunak.</p>
-        </div>
-      </div>
+//         <div class="f-credits">
+//           <p>Copyright ©2022 All rights reserved | This template is made with ❤ by Raunak.</p>
+//         </div>
+//       </div>
 
-    </footer>
-    `
-}
-}
+//     </footer>
+//     `
+// }
+// }
 
-customElements.define('my-footer',myFooter);
+// customElements.define('my-footer',myFooter);
 
 
 

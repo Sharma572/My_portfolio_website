@@ -433,7 +433,7 @@ contact Section
 
 .section-contact-main {
   max-width: 90rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   margin-top: 10rem;
 }
 
@@ -459,12 +459,12 @@ textarea {
 }
 .container-contact{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 .contact-img-container{
-  width: 30%;
-
+  width: 50%;
+   display: flex;
 }
 .contact-img{
 width: 100%;
@@ -476,10 +476,7 @@ height: 100%;
 }
 
 .section-contact-main input[type="submit"] {
-  
   padding: 15px 20px;
-  width: 40%;
- 
   border: none;
 }
 
@@ -489,11 +486,19 @@ Footer Section
 
 .section-footer {
   background: var(--heading);
+  padding: 5rem;
 }
+
+footer.section > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
 
 .section-footer h3 {
   color: var(--third);
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .social-icons{
   display: flex;
@@ -506,14 +511,18 @@ height: 6rem;
 }
 
 .social-logo{
-  height: 4rem;
+  height: 5rem;
   margin: 15px ;
+  padding: 5x;
 }
 
-.f-about p {
-  color: #adadad;
+.f-about {
+  text-align: center;
 }
-
+.f-address{
+  margin: 0 auto;
+  text-align: center;
+}
 .f-links ul,
 .f-services ul,
 .f-address address {
@@ -547,6 +556,8 @@ height: 6rem;
 .f-credits p {
   text-align: center;
   color: #adadad;
+  margin-top: 2rem;
+
 }
 
 footer a:hover {
@@ -721,13 +732,42 @@ Media Queries Section
     margin-top: 3.2rem;
   }
 
+
   /* work section  */
   .section-work-data .grid-four-col {
     grid-template-columns: 1fr 1fr;
   }
+  .section-portfolio{
+    padding-top:0 ;
+  }
+  /* contact form */
+  .container-contact{
+    flex-direction: column;
+  }
+  .section-contact-main{
+   margin-top: 3%;
+  }
 }
 
-@media (max-width: 350px){
+@media (max-width: 400px){
+  .my-info {
+    height: 50px;
+    }
+    .input {
+      font-size: 1.9rem;
+      text-align: center;
+    }
+    .my_name {
+    font-size: 2.5rem;
+    margin: 15px 0;
+    }
+
+    /* Bio data */
+ 
+    .section-biodata{
+      padding: 0px;
+    }
+
   .section-contact-main input[type="submit"] {
     display: flex;
     place-items: center;
@@ -747,7 +787,22 @@ Media Queries Section
 .contact-img-container {
   width: 100%;
 }
-.container-contact{
-  flex-direction: column;
+
+.send-message-btn{
+  display: flex;
+  justify-content: center;
 }
+
+footer.section > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .section-footer h3 {
+  text-align: center;
+  margin-top: 35px;
+  }
+  .f-about p {
+  text-align: center;
+  }
 }
